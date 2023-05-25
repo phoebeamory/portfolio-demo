@@ -1,0 +1,292 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: #260548;
+  color: white;
+  font-size: 12px;
+  font-family: 'Libre Baskerville';
+  margin: 0;
+  padding: 0;
+  /* transition: all 0.5s ease-out */
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.name {
+  font-family: 'League Spartan';
+}
+
+
+.nav-container {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  background-color: #58357e;
+  /* position: sticky; */
+  /* position: fixed; */
+  /* top: 0; */
+  width: 100%;
+  margin-bottom: 10px;
+  position:relative;
+  /* height:80px; */
+}
+
+.name {
+  padding-left: 2%;
+  font-size: 16px;
+}
+
+.nav-bar ul {
+  display: flex;
+  justify-content: flex-end;
+
+  position: absolute;
+  right: 2%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  /* top:40px; */
+}
+
+li a {
+  list-style-type: none;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+
+  color: #a78cc0;
+  transition: 0.3s ease-out;
+  cursor: pointer;
+}
+.youtube-logo{
+  color: red;
+}
+
+.square {
+  position: absolute;
+  background-color: lightblue;
+  width: 500px;
+  height: 300px;
+  margin: auto;
+  top: 150px;
+  left: 200px;
+  z-index: -100;
+  overflow:hidden;
+}
+
+.nav-bar {
+  font-size: 12px;
+}
+
+.intro {
+  font-size: 36px;
+  border-style: double;
+  border-width: 3px;
+  border-color: white;
+  padding: 7%;
+  width: 45%;
+  padding-bottom: 0;
+  padding-top: 10%;
+  margin: 2%;
+  /* font-weight: bold; */
+
+
+  /* height: 150px; */
+  /* margin: 20px; */
+  /* margin-top:25px; */
+  /* position:absolute;
+  top:50px; */
+}
+
+.intro h5 {
+  text-align: right;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 50px;
+  color: lightblue;
+  text-shadow: 2px 2px #260548;
+}
+
+.intro h1 {
+  margin: 0;
+  padding: 0;
+  padding-top: 50px;
+  text-shadow: 2px 2px #260548;
+}
+
+.active {
+  color: #add8e6;
+  text-underline-position: under;
+}
+
+.description {
+  margin-top: 10px;
+}
+
+.title {
+  width: 60%;
+  margin: auto;
+}
+
+.title h2 {
+  text-align: center;
+}
+
+.content {
+  position: relative;
+}
+
+.pic-of-me {
+  /* margin:20px;
+  margin-right:50px; */
+  width: 325px;
+  box-shadow: 10px 10px lightblue;
+
+  /* width: 100px; */
+  /* float:right; */
+  /* margin:3%; */
+  /* margin-left: 0; */
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 2%;
+}
+
+.footer {
+  padding: 3px;
+  text-align: center;
+  background-color: #58357e;
+}
+
+.footer a {
+  color: lightblue;
+}
+
+ion-icon {
+  font-size: 24px;
+}
+
+.project {
+  text-align: center;
+  width: 35%;
+  padding: 50px;
+  margin: auto;
+  border-style: double;
+  border-width: 3px;
+  border-color: white;
+  margin-bottom: 15px;
+}
+
+.project h1 {
+  font-weight: normal;
+}
+
+a {
+  color: white;
+  transition: color 0.3s;
+}
+
+.project-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-ss {
+  width: 250px;
+  padding: 10px;
+  border-style: double;
+  margin: 10px;
+  text-align: center;
+  justify-content: center;
+}
+
+
+@media screen and (max-width:600px) {
+  .flex-container {
+    flex-direction: column;
+    justify-content: space-between;
+
+  }
+
+  .nav-container {
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    /* height: 100px; */
+  }
+  /* .nav-bar{
+    height: 100%;
+    position: sticky;
+  } */
+
+  .nav-bar ul {
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    right: auto;
+    margin: auto;
+    background-color: #58357e;
+  }
+
+  .intro {
+    height: 300px;
+  }
+
+  img,
+  .intro {
+    margin: auto;
+    margin-bottom: 20px;
+  }
+
+  .square {
+    width: 300px;
+    right:2px;
+    left:auto;
+    /* margin: auto; */
+  }
+
+  .project {
+    width: 90%;
+  }
+  .project-ss{
+    width:100px;
+  }
+
+}
+
+input[type=text],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #5DADE2;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+}
